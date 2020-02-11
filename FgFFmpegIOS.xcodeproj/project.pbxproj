@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D19702BA5549A159F0DB89B /* Pods_FgFFmpegIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB03AF9423F0141CECCE693 /* Pods_FgFFmpegIOS.framework */; };
+		BB5A03B923F296ED008E8E79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A03B823F296ED008E8E79 /* AppDelegate.swift */; };
+		BB5A03BB23F296ED008E8E79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A03BA23F296ED008E8E79 /* SceneDelegate.swift */; };
+		BB5A03BD23F296ED008E8E79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A03BC23F296ED008E8E79 /* ViewController.swift */; };
+		BB5A03C023F296ED008E8E79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5A03BE23F296ED008E8E79 /* Main.storyboard */; };
+		BB5A03C223F296EF008E8E79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB5A03C123F296EF008E8E79 /* Assets.xcassets */; };
+		BB5A03C523F296EF008E8E79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5A03C323F296EF008E8E79 /* LaunchScreen.storyboard */; };
+		BB5A03D023F296EF008E8E79 /* FgFFmpegIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A03CF23F296EF008E8E79 /* FgFFmpegIOSTests.swift */; };
+		BB5A03DB23F296EF008E8E79 /* FgFFmpegIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A03DA23F296EF008E8E79 /* FgFFmpegIOSUITests.swift */; };
+		BB5A068423F2BE88008E8E79 /* demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BB5A068323F2BE88008E8E79 /* demo.mp4 */; };
+		BB5A06AC23F2E6EC008E8E79 /* FgFFmpeg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5A040C23F2993D008E8E79 /* FgFFmpeg.framework */; };
+		BB5A06AD23F2E6EC008E8E79 /* FgFFmpeg.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB5A040C23F2993D008E8E79 /* FgFFmpeg.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCA699F72C753D3A99396D84 /* Pods_FgFFmpegIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71832FF74906E35C6A933F2 /* Pods_FgFFmpegIOSTests.framework */; };
+		DF8A7AC0030236B5514B0E19 /* Pods_FgFFmpegIOS_FgFFmpegIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF54319FF8E093803A5ACD8 /* Pods_FgFFmpegIOS_FgFFmpegIOSUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB5A03CC23F296EF008E8E79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB5A03AD23F296ED008E8E79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB5A03B423F296ED008E8E79;
+			remoteInfo = FgFFmpegIOS;
+		};
+		BB5A03D723F296EF008E8E79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB5A03AD23F296ED008E8E79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB5A03B423F296ED008E8E79;
+			remoteInfo = FgFFmpegIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB5A06AE23F2E6ED008E8E79 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BB5A06AD23F2E6EC008E8E79 /* FgFFmpeg.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1C99F26720A67BBE913A2671 /* Pods-FgFFmpegIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FgFFmpegIOSTests.debug.xcconfig"; path = "Target Support Files/Pods-FgFFmpegIOSTests/Pods-FgFFmpegIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1DB03AF9423F0141CECCE693 /* Pods_FgFFmpegIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FgFFmpegIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2228E41CE90B8062812E0039 /* Pods-FgFFmpegIOS-FgFFmpegIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FgFFmpegIOS-FgFFmpegIOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-FgFFmpegIOS-FgFFmpegIOSUITests/Pods-FgFFmpegIOS-FgFFmpegIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DF54319FF8E093803A5ACD8 /* Pods_FgFFmpegIOS_FgFFmpegIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FgFFmpegIOS_FgFFmpegIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7A4E1380C06C342B2E1BAFC /* Pods-FgFFmpegIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FgFFmpegIOSTests.release.xcconfig"; path = "Target Support Files/Pods-FgFFmpegIOSTests/Pods-FgFFmpegIOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		BB5A03B523F296ED008E8E79 /* FgFFmpegIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FgFFmpegIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5A03B823F296ED008E8E79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB5A03BA23F296ED008E8E79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BB5A03BC23F296ED008E8E79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB5A03BF23F296ED008E8E79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB5A03C123F296EF008E8E79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB5A03C423F296EF008E8E79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB5A03C623F296EF008E8E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5A03CB23F296EF008E8E79 /* FgFFmpegIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FgFFmpegIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5A03CF23F296EF008E8E79 /* FgFFmpegIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FgFFmpegIOSTests.swift; sourceTree = "<group>"; };
+		BB5A03D123F296EF008E8E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5A03D623F296EF008E8E79 /* FgFFmpegIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FgFFmpegIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5A03DA23F296EF008E8E79 /* FgFFmpegIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FgFFmpegIOSUITests.swift; sourceTree = "<group>"; };
+		BB5A03DC23F296EF008E8E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5A040C23F2993D008E8E79 /* FgFFmpeg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FgFFmpeg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5A059B23F2A195008E8E79 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BB5A059D23F2A19E008E8E79 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		BB5A059F23F2A1AB008E8E79 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		BB5A05A123F2A1B4008E8E79 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		BB5A05A323F2A1BD008E8E79 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		BB5A05A523F2A1C8008E8E79 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BB5A05A723F2A1D3008E8E79 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BB5A05AA23F2A585008E8E79 /* FgFFmpegIOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FgFFmpegIOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB5A068323F2BE88008E8E79 /* demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.mp4; sourceTree = "<group>"; };
+		BB5A068D23F2E60E008E8E79 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
+		BB5A068E23F2E60E008E8E79 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavfilter.a; sourceTree = "<group>"; };
+		BB5A068F23F2E60E008E8E79 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavcodec.a; sourceTree = "<group>"; };
+		BB5A069023F2E60E008E8E79 /* libpostproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpostproc.a; sourceTree = "<group>"; };
+		BB5A069123F2E60E008E8E79 /* libavresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavresample.a; sourceTree = "<group>"; };
+		BB5A069223F2E60E008E8E79 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavformat.a; sourceTree = "<group>"; };
+		BB5A069323F2E60E008E8E79 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavdevice.a; sourceTree = "<group>"; };
+		BB5A069423F2E60E008E8E79 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
+		BB5A069523F2E60E008E8E79 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
+		BB5A069823F2E60E008E8E79 /* libfdk-aac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libfdk-aac.a"; sourceTree = "<group>"; };
+		BB5A069F23F2E60E008E8E79 /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libx264.a; sourceTree = "<group>"; };
+		BCF409FD495954DF4AD18ADB /* Pods-FgFFmpegIOS-FgFFmpegIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FgFFmpegIOS-FgFFmpegIOSUITests.release.xcconfig"; path = "Target Support Files/Pods-FgFFmpegIOS-FgFFmpegIOSUITests/Pods-FgFFmpegIOS-FgFFmpegIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C2356F274F4CB5CAED800839 /* Pods-FgFFmpegIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FgFFmpegIOS.release.xcconfig"; path = "Target Support Files/Pods-FgFFmpegIOS/Pods-FgFFmpegIOS.release.xcconfig"; sourceTree = "<group>"; };
+		D71832FF74906E35C6A933F2 /* Pods_FgFFmpegIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FgFFmpegIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF36A67A7483636E8915D0A5 /* Pods-FgFFmpegIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FgFFmpegIOS.debug.xcconfig"; path = "Target Support Files/Pods-FgFFmpegIOS/Pods-FgFFmpegIOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB5A03B223F296ED008E8E79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D19702BA5549A159F0DB89B /* Pods_FgFFmpegIOS.framework in Frameworks */,
+				BB5A06AC23F2E6EC008E8E79 /* FgFFmpeg.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5A03C823F296EF008E8E79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA699F72C753D3A99396D84 /* Pods_FgFFmpegIOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5A03D323F296EF008E8E79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF8A7AC0030236B5514B0E19 /* Pods_FgFFmpegIOS_FgFFmpegIOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		850497BBDB6B742F7144FAFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A05A723F2A1D3008E8E79 /* AudioToolbox.framework */,
+				BB5A05A523F2A1C8008E8E79 /* AVFoundation.framework */,
+				BB5A05A323F2A1BD008E8E79 /* VideoToolbox.framework */,
+				BB5A05A123F2A1B4008E8E79 /* CoreMedia.framework */,
+				BB5A059F23F2A1AB008E8E79 /* libiconv.tbd */,
+				BB5A059D23F2A19E008E8E79 /* libbz2.tbd */,
+				BB5A059B23F2A195008E8E79 /* libz.tbd */,
+				BB5A040C23F2993D008E8E79 /* FgFFmpeg.framework */,
+				1DB03AF9423F0141CECCE693 /* Pods_FgFFmpegIOS.framework */,
+				6DF54319FF8E093803A5ACD8 /* Pods_FgFFmpegIOS_FgFFmpegIOSUITests.framework */,
+				D71832FF74906E35C6A933F2 /* Pods_FgFFmpegIOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		954940955DABA732E505BA9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF36A67A7483636E8915D0A5 /* Pods-FgFFmpegIOS.debug.xcconfig */,
+				C2356F274F4CB5CAED800839 /* Pods-FgFFmpegIOS.release.xcconfig */,
+				2228E41CE90B8062812E0039 /* Pods-FgFFmpegIOS-FgFFmpegIOSUITests.debug.xcconfig */,
+				BCF409FD495954DF4AD18ADB /* Pods-FgFFmpegIOS-FgFFmpegIOSUITests.release.xcconfig */,
+				1C99F26720A67BBE913A2671 /* Pods-FgFFmpegIOSTests.debug.xcconfig */,
+				B7A4E1380C06C342B2E1BAFC /* Pods-FgFFmpegIOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BB5A03AC23F296ED008E8E79 = {
+			isa = PBXGroup;
+			children = (
+				BB5A03B723F296ED008E8E79 /* FgFFmpegIOS */,
+				BB5A03CE23F296EF008E8E79 /* FgFFmpegIOSTests */,
+				BB5A03D923F296EF008E8E79 /* FgFFmpegIOSUITests */,
+				BB5A03B623F296ED008E8E79 /* Products */,
+				954940955DABA732E505BA9D /* Pods */,
+				850497BBDB6B742F7144FAFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB5A03B623F296ED008E8E79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A03B523F296ED008E8E79 /* FgFFmpegIOS.app */,
+				BB5A03CB23F296EF008E8E79 /* FgFFmpegIOSTests.xctest */,
+				BB5A03D623F296EF008E8E79 /* FgFFmpegIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB5A03B723F296ED008E8E79 /* FgFFmpegIOS */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A068223F2BE88008E8E79 /* assets */,
+				BB5A05A923F2A56D008E8E79 /* OC */,
+				BB5A068A23F2E60E008E8E79 /* cpp */,
+				BB5A03B823F296ED008E8E79 /* AppDelegate.swift */,
+				BB5A03BA23F296ED008E8E79 /* SceneDelegate.swift */,
+				BB5A03BC23F296ED008E8E79 /* ViewController.swift */,
+				BB5A03BE23F296ED008E8E79 /* Main.storyboard */,
+				BB5A03C123F296EF008E8E79 /* Assets.xcassets */,
+				BB5A03C323F296EF008E8E79 /* LaunchScreen.storyboard */,
+				BB5A03C623F296EF008E8E79 /* Info.plist */,
+			);
+			path = FgFFmpegIOS;
+			sourceTree = "<group>";
+		};
+		BB5A03CE23F296EF008E8E79 /* FgFFmpegIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A03CF23F296EF008E8E79 /* FgFFmpegIOSTests.swift */,
+				BB5A03D123F296EF008E8E79 /* Info.plist */,
+			);
+			path = FgFFmpegIOSTests;
+			sourceTree = "<group>";
+		};
+		BB5A03D923F296EF008E8E79 /* FgFFmpegIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A03DA23F296EF008E8E79 /* FgFFmpegIOSUITests.swift */,
+				BB5A03DC23F296EF008E8E79 /* Info.plist */,
+			);
+			path = FgFFmpegIOSUITests;
+			sourceTree = "<group>";
+		};
+		BB5A05A923F2A56D008E8E79 /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A05AA23F2A585008E8E79 /* FgFFmpegIOS-Bridging-Header.h */,
+			);
+			path = OC;
+			sourceTree = "<group>";
+		};
+		BB5A068223F2BE88008E8E79 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A068323F2BE88008E8E79 /* demo.mp4 */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		BB5A068A23F2E60E008E8E79 /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A068B23F2E60E008E8E79 /* ffmpeg */,
+				BB5A069623F2E60E008E8E79 /* fdk-aac */,
+				BB5A069D23F2E60E008E8E79 /* x264 */,
+			);
+			path = cpp;
+			sourceTree = "<group>";
+		};
+		BB5A068B23F2E60E008E8E79 /* ffmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A068C23F2E60E008E8E79 /* lib */,
+			);
+			path = ffmpeg;
+			sourceTree = "<group>";
+		};
+		BB5A068C23F2E60E008E8E79 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A068D23F2E60E008E8E79 /* libavutil.a */,
+				BB5A068E23F2E60E008E8E79 /* libavfilter.a */,
+				BB5A068F23F2E60E008E8E79 /* libavcodec.a */,
+				BB5A069023F2E60E008E8E79 /* libpostproc.a */,
+				BB5A069123F2E60E008E8E79 /* libavresample.a */,
+				BB5A069223F2E60E008E8E79 /* libavformat.a */,
+				BB5A069323F2E60E008E8E79 /* libavdevice.a */,
+				BB5A069423F2E60E008E8E79 /* libswresample.a */,
+				BB5A069523F2E60E008E8E79 /* libswscale.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		BB5A069623F2E60E008E8E79 /* fdk-aac */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A069723F2E60E008E8E79 /* lib */,
+			);
+			path = "fdk-aac";
+			sourceTree = "<group>";
+		};
+		BB5A069723F2E60E008E8E79 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A069823F2E60E008E8E79 /* libfdk-aac.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		BB5A069D23F2E60E008E8E79 /* x264 */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A069E23F2E60E008E8E79 /* lib */,
+			);
+			path = x264;
+			sourceTree = "<group>";
+		};
+		BB5A069E23F2E60E008E8E79 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A069F23F2E60E008E8E79 /* libx264.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB5A03B423F296ED008E8E79 /* FgFFmpegIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5A03DF23F296EF008E8E79 /* Build configuration list for PBXNativeTarget "FgFFmpegIOS" */;
+			buildPhases = (
+				3A482E6B7D30A12313E5BF99 /* [CP] Check Pods Manifest.lock */,
+				BB5A03B123F296ED008E8E79 /* Sources */,
+				BB5A03B223F296ED008E8E79 /* Frameworks */,
+				BB5A03B323F296ED008E8E79 /* Resources */,
+				BB5A06AE23F2E6ED008E8E79 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FgFFmpegIOS;
+			productName = FgFFmpegIOS;
+			productReference = BB5A03B523F296ED008E8E79 /* FgFFmpegIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB5A03CA23F296EF008E8E79 /* FgFFmpegIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5A03E223F296EF008E8E79 /* Build configuration list for PBXNativeTarget "FgFFmpegIOSTests" */;
+			buildPhases = (
+				3B6988BF636073AA8F13B200 /* [CP] Check Pods Manifest.lock */,
+				BB5A03C723F296EF008E8E79 /* Sources */,
+				BB5A03C823F296EF008E8E79 /* Frameworks */,
+				BB5A03C923F296EF008E8E79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB5A03CD23F296EF008E8E79 /* PBXTargetDependency */,
+			);
+			name = FgFFmpegIOSTests;
+			productName = FgFFmpegIOSTests;
+			productReference = BB5A03CB23F296EF008E8E79 /* FgFFmpegIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB5A03D523F296EF008E8E79 /* FgFFmpegIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5A03E523F296EF008E8E79 /* Build configuration list for PBXNativeTarget "FgFFmpegIOSUITests" */;
+			buildPhases = (
+				7BC04FD96BB611082C578B9E /* [CP] Check Pods Manifest.lock */,
+				BB5A03D223F296EF008E8E79 /* Sources */,
+				BB5A03D323F296EF008E8E79 /* Frameworks */,
+				BB5A03D423F296EF008E8E79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB5A03D823F296EF008E8E79 /* PBXTargetDependency */,
+			);
+			name = FgFFmpegIOSUITests;
+			productName = FgFFmpegIOSUITests;
+			productReference = BB5A03D623F296EF008E8E79 /* FgFFmpegIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB5A03AD23F296ED008E8E79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = redos;
+				TargetAttributes = {
+					BB5A03B423F296ED008E8E79 = {
+						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
+					};
+					BB5A03CA23F296EF008E8E79 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = BB5A03B423F296ED008E8E79;
+					};
+					BB5A03D523F296EF008E8E79 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = BB5A03B423F296ED008E8E79;
+					};
+				};
+			};
+			buildConfigurationList = BB5A03B023F296ED008E8E79 /* Build configuration list for PBXProject "FgFFmpegIOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB5A03AC23F296ED008E8E79;
+			productRefGroup = BB5A03B623F296ED008E8E79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB5A03B423F296ED008E8E79 /* FgFFmpegIOS */,
+				BB5A03CA23F296EF008E8E79 /* FgFFmpegIOSTests */,
+				BB5A03D523F296EF008E8E79 /* FgFFmpegIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB5A03B323F296ED008E8E79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5A068423F2BE88008E8E79 /* demo.mp4 in Resources */,
+				BB5A03C523F296EF008E8E79 /* LaunchScreen.storyboard in Resources */,
+				BB5A03C223F296EF008E8E79 /* Assets.xcassets in Resources */,
+				BB5A03C023F296ED008E8E79 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5A03C923F296EF008E8E79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5A03D423F296EF008E8E79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A482E6B7D30A12313E5BF99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FgFFmpegIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B6988BF636073AA8F13B200 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FgFFmpegIOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BC04FD96BB611082C578B9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FgFFmpegIOS-FgFFmpegIOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB5A03B123F296ED008E8E79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5A03BD23F296ED008E8E79 /* ViewController.swift in Sources */,
+				BB5A03B923F296ED008E8E79 /* AppDelegate.swift in Sources */,
+				BB5A03BB23F296ED008E8E79 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5A03C723F296EF008E8E79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5A03D023F296EF008E8E79 /* FgFFmpegIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5A03D223F296EF008E8E79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5A03DB23F296EF008E8E79 /* FgFFmpegIOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB5A03CD23F296EF008E8E79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB5A03B423F296ED008E8E79 /* FgFFmpegIOS */;
+			targetProxy = BB5A03CC23F296EF008E8E79 /* PBXContainerItemProxy */;
+		};
+		BB5A03D823F296EF008E8E79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB5A03B423F296ED008E8E79 /* FgFFmpegIOS */;
+			targetProxy = BB5A03D723F296EF008E8E79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB5A03BE23F296ED008E8E79 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB5A03BF23F296ED008E8E79 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB5A03C323F296EF008E8E79 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB5A03C423F296EF008E8E79 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB5A03DD23F296EF008E8E79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB5A03DE23F296EF008E8E79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB5A03E023F296EF008E8E79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF36A67A7483636E8915D0A5 /* Pods-FgFFmpegIOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PQ7Q423GRZ;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = FgFFmpegIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FgFFmpegIOS/cpp/ffmpeg/lib",
+					"$(PROJECT_DIR)/FgFFmpegIOS/cpp/fdk-aac/lib",
+					"$(PROJECT_DIR)/FgFFmpegIOS/cpp/x264/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.FgFFmpegIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FgFFmpegIOS/OC/FgFFmpegIOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB5A03E123F296EF008E8E79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2356F274F4CB5CAED800839 /* Pods-FgFFmpegIOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PQ7Q423GRZ;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = FgFFmpegIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FgFFmpegIOS/cpp/ffmpeg/lib",
+					"$(PROJECT_DIR)/FgFFmpegIOS/cpp/fdk-aac/lib",
+					"$(PROJECT_DIR)/FgFFmpegIOS/cpp/x264/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.FgFFmpegIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FgFFmpegIOS/OC/FgFFmpegIOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB5A03E323F296EF008E8E79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C99F26720A67BBE913A2671 /* Pods-FgFFmpegIOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PQ7Q423GRZ;
+				INFOPLIST_FILE = FgFFmpegIOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.FgFFmpegIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FgFFmpegIOS.app/FgFFmpegIOS";
+			};
+			name = Debug;
+		};
+		BB5A03E423F296EF008E8E79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7A4E1380C06C342B2E1BAFC /* Pods-FgFFmpegIOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PQ7Q423GRZ;
+				INFOPLIST_FILE = FgFFmpegIOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.FgFFmpegIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FgFFmpegIOS.app/FgFFmpegIOS";
+			};
+			name = Release;
+		};
+		BB5A03E623F296EF008E8E79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2228E41CE90B8062812E0039 /* Pods-FgFFmpegIOS-FgFFmpegIOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PQ7Q423GRZ;
+				INFOPLIST_FILE = FgFFmpegIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.FgFFmpegIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FgFFmpegIOS;
+			};
+			name = Debug;
+		};
+		BB5A03E723F296EF008E8E79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCF409FD495954DF4AD18ADB /* Pods-FgFFmpegIOS-FgFFmpegIOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PQ7Q423GRZ;
+				INFOPLIST_FILE = FgFFmpegIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.FgFFmpegIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FgFFmpegIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB5A03B023F296ED008E8E79 /* Build configuration list for PBXProject "FgFFmpegIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5A03DD23F296EF008E8E79 /* Debug */,
+				BB5A03DE23F296EF008E8E79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5A03DF23F296EF008E8E79 /* Build configuration list for PBXNativeTarget "FgFFmpegIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5A03E023F296EF008E8E79 /* Debug */,
+				BB5A03E123F296EF008E8E79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5A03E223F296EF008E8E79 /* Build configuration list for PBXNativeTarget "FgFFmpegIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5A03E323F296EF008E8E79 /* Debug */,
+				BB5A03E423F296EF008E8E79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5A03E523F296EF008E8E79 /* Build configuration list for PBXNativeTarget "FgFFmpegIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5A03E623F296EF008E8E79 /* Debug */,
+				BB5A03E723F296EF008E8E79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB5A03AD23F296ED008E8E79 /* Project object */;
+}
