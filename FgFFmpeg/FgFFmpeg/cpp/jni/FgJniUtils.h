@@ -7,12 +7,12 @@
 #include <string>
 
 #define TAG "FFMPEG_JNI"
-#define LOGV(...)
-#define LOGD(...)
-#define LOGI(...)
-#define LOGW(...)
-#define LOGE(...)
-#define LOGF(...)
+#define LOGV(...) printf(__VA_ARGS__)
+#define LOGD(...) printf(__VA_ARGS__)
+#define LOGI(...) printf(__VA_ARGS__)
+#define LOGW(...) printf(__VA_ARGS__)
+#define LOGE(...) printf(__VA_ARGS__)
+#define LOGF(...) printf(__VA_ARGS__)
 
 
 #endif //MYFFMPEGTEST_FGJNIUTILS_H

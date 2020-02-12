@@ -33,4 +33,8 @@ void OnFFmpegProgress(int64_t _id, int status, int64_t frames, int64_t totalFram
     g_callback = callback;
     return CFgAVUtils::ffmpegMain(argv.count, (char**)argCmd, OnFFmpegProgress, 1);
 }
+
++(void)printCodecs {
+    CFgAVUtils::printCodecs();
+}
 @end

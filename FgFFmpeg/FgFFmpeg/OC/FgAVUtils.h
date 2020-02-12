@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(NSString*)getFileInfo: (NSString*)filePath;
 +(int)ffmpegMain: (long) taskId argv: (NSArray*) argv callback: (id<FgFFmpegProgressCallback>) callback;
++(void)printCodecs;
 @end
 
 NS_ASSUME_NONNULL_END

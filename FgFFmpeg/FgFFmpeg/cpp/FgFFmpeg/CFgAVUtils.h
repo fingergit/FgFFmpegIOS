@@ -12,6 +12,7 @@ class CFgAVUtils {
 public:
     static std::string getFileInfo(std::string filePath);
     static int ffmpegMain(int argc, char **argv, FFmpegProgressCB cbProgress, int64_t taskId);
+    static void printCodecs();
 };
 
 

@@ -17,6 +17,8 @@ class ViewController: UIViewController, FgFFmpegProgressCallback {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        FgAVUtils.printCodecs()
+
     }
 
     @IBAction func onStartTranscode(_ sender: Any) {
@@ -24,12 +26,22 @@ class ViewController: UIViewController, FgFFmpegProgressCallback {
         let info = FgAVUtils.getFileInfo(filePath!)
         print(info)
         
+//        FgAVUtils.ffmpegMain(1,
+//                             argv: ["ffmpeg", "-i", filePath, "-y",
+//                             "-c:v", "mpeg4", "-c:a", "aac", "-strict",
+//                             "experimental", "-b:a", "192k", "-shortest",
+//                             "/Users/redos/z/Temp/demo_output.mp4"],
+//                             callback: self)
         FgAVUtils.ffmpegMain(1,
-                             argv: ["ffmpeg", "-i", filePath, "-y",
-                             "-c:v", "mpeg4", "-c:a", "aac", "-strict",
-                             "experimental", "-b:a", "192k", "-shortest",
-                             "/Users/redos/z/Temp/demo_output.mp4"],
-                             callback: self)
+                     argv: ["ffmpeg", "-i", filePath, "-y",
+                     "-c:v", "libx264", "-c:a", "aac", "-strict",
+                     "experimental", "-b:a", "192k", "-shortest",
+                     "/Users/redos/z/Temp/demo_output.mp4"],
+                     callback: self)
+//        FgAVUtils.ffmpegMain(1,
+//                             argv: ["ffmpeg", "-encoders"],
+//                             callback: self)
+        print("ddd")
     }
     
 }
